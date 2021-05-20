@@ -1,3 +1,12 @@
 # IoT_Car
 
-### Project on 21/5/6
+### Needed
+- Raspberry pi 4 model B
+- Raspberry pi motor HAT v0.2
+- Power Supplier
+- Batteries
+- 4 Wheels
+
+---
+
+### Setting Environment
