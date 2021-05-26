@@ -66,34 +66,7 @@ class pollingThread(QThread):
             self.timeF += 1
 
     def setQuery(self):
-        GPIO.output(self.TRIG, True)
-
-        time.sleep(0.00001)
-        GPIO.output(self.TRIG, False)
-
-        StartTime = time.time()
-        StopTime = time.time()
-
-        while GPIO.input(self.ECHO) == 0:
-            StartTime = time.time()
-
-        while GPIO.input(self.ECHO) == 1:
-            StopTime = time.time()
-
-        TimeElapsed = StopTime - StartTime
-        distance = (TimeElapsed * 34300) / 2
-
-        print(distance)
         '''
-        # pressure = self.sense.get_pressure()
-        # temp = self.sense.get_temperature()
-        # humidity = self.sense.get_humidity()
-
-        # p = round((pressure - 1000) / 100, 3)
-        # t = round(temp / 100, 3)
-        # h = round(humidity / 100, 3)
-
-        self.query = QtSql.QSqlQuery()
         self.query.prepare("insert into sensing (time, num1, num2, num3, meta_string, is_finish) values (:time, :num1, :num2, :num3, :meta, :finish)")
         time = QDateTime().currentDateTime()
         self.query.bindValue(":time", time)
@@ -103,11 +76,6 @@ class pollingThread(QThread):
         self.query.bindValue(":meta", "")
         self.query.bindValue(":finish", 0)
         self.query.exec()
-
-        # a = int((p * 1271) % 256)
-        # b = int((t * 1271) % 256)
-        # c = int((h * 1271) % 256)
-        # self.sense.clear(a,b,c)
         '''
 
     def getQuery(self):
