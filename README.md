@@ -10,18 +10,20 @@
 ---
 
 ### To do
-- Control RC car with APK
-- Honk(buzzer)
-- Blackbox(camera) : repeatedly takes a picture and store in database 
+- Control RC car with APK 
 - Obstacle detection and stopping(ultrasonic sensor)
-- Tilting dectetion and stopping(sense hat)
 - Voice recognition and RC car control connected with AR glasses
+
+### Removed
+- Tilting dectetion and stopping(sense hat)
 
 ### Complete
 - RC car controller with PyQT
   - speed
   - direction(left, center, right)
   - forward, stop, reverse
+  - Honk(buzzer)
+  - Blackbox(camera) : repeatedly takes a picture and store in database
 
 ---
 
