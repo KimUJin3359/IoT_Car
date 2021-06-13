@@ -10,7 +10,7 @@
 ---
 
 ### To do
-- Control RC car with APK 
+- Control RC car with Android Application
 - Obstacle detection and stopping(ultrasonic sensor)
 - Voice recognition and RC car control connected with AR glasses
 
